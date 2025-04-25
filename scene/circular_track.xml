@@ -1,0 +1,2721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mujoco model="circular_track">
+
+  <asset>
+    <material name="mat_ground" rgba="0.3 0.3 0.3 1"/>
+    <material name="mat_track"  rgba="0.6 0.6 0.6 1"/>
+    <material name="mat_wall"   rgba="0.1 0.1 0.9 1"/>
+  </asset>
+
+  <worldbody>
+    <geom name="floor" type="plane" size="20 20 0.1" material="mat_ground"/>
+
+    <geom name="inner_cover" type="cylinder"
+          pos="0 0 0.0050"
+          size="4.0000 0.0050"
+          material="mat_ground" contype="0" conaffinity="0"/>
+
+    <body>
+      <geom name="seg_0" type="box"
+            pos="5.0000 0.0000 0.0050"
+            quat="1.0000 0 0 0.0000"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_1" type="box"
+            pos="4.9940 0.2453 0.0050"
+            quat="0.9997 0 0 0.0245"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_2" type="box"
+            pos="4.9759 0.4901 0.0050"
+            quat="0.9988 0 0 0.0491"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_3" type="box"
+            pos="4.9459 0.7337 0.0050"
+            quat="0.9973 0 0 0.0736"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_4" type="box"
+            pos="4.9039 0.9755 0.0050"
+            quat="0.9952 0 0 0.0980"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_5" type="box"
+            pos="4.8502 1.2149 0.0050"
+            quat="0.9925 0 0 0.1224"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_6" type="box"
+            pos="4.7847 1.4514 0.0050"
+            quat="0.9892 0 0 0.1467"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_7" type="box"
+            pos="4.7077 1.6844 0.0050"
+            quat="0.9853 0 0 0.1710"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_8" type="box"
+            pos="4.6194 1.9134 0.0050"
+            quat="0.9808 0 0 0.1951"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_9" type="box"
+            pos="4.5199 2.1378 0.0050"
+            quat="0.9757 0 0 0.2191"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_10" type="box"
+            pos="4.4096 2.3570 0.0050"
+            quat="0.9700 0 0 0.2430"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_11" type="box"
+            pos="4.2886 2.5705 0.0050"
+            quat="0.9638 0 0 0.2667"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_12" type="box"
+            pos="4.1573 2.7779 0.0050"
+            quat="0.9569 0 0 0.2903"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_13" type="box"
+            pos="4.0160 2.9785 0.0050"
+            quat="0.9495 0 0 0.3137"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_14" type="box"
+            pos="3.8651 3.1720 0.0050"
+            quat="0.9415 0 0 0.3369"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_15" type="box"
+            pos="3.7048 3.3578 0.0050"
+            quat="0.9330 0 0 0.3599"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_16" type="box"
+            pos="3.5355 3.5355 0.0050"
+            quat="0.9239 0 0 0.3827"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_17" type="box"
+            pos="3.3578 3.7048 0.0050"
+            quat="0.9142 0 0 0.4052"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_18" type="box"
+            pos="3.1720 3.8651 0.0050"
+            quat="0.9040 0 0 0.4276"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_19" type="box"
+            pos="2.9785 4.0160 0.0050"
+            quat="0.8932 0 0 0.4496"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_20" type="box"
+            pos="2.7779 4.1573 0.0050"
+            quat="0.8819 0 0 0.4714"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_21" type="box"
+            pos="2.5705 4.2886 0.0050"
+            quat="0.8701 0 0 0.4929"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_22" type="box"
+            pos="2.3570 4.4096 0.0050"
+            quat="0.8577 0 0 0.5141"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_23" type="box"
+            pos="2.1378 4.5199 0.0050"
+            quat="0.8449 0 0 0.5350"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_24" type="box"
+            pos="1.9134 4.6194 0.0050"
+            quat="0.8315 0 0 0.5556"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_25" type="box"
+            pos="1.6844 4.7077 0.0050"
+            quat="0.8176 0 0 0.5758"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_26" type="box"
+            pos="1.4514 4.7847 0.0050"
+            quat="0.8032 0 0 0.5957"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_27" type="box"
+            pos="1.2149 4.8502 0.0050"
+            quat="0.7883 0 0 0.6152"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_28" type="box"
+            pos="0.9755 4.9039 0.0050"
+            quat="0.7730 0 0 0.6344"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_29" type="box"
+            pos="0.7337 4.9459 0.0050"
+            quat="0.7572 0 0 0.6532"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_30" type="box"
+            pos="0.4901 4.9759 0.0050"
+            quat="0.7410 0 0 0.6716"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_31" type="box"
+            pos="0.2453 4.9940 0.0050"
+            quat="0.7242 0 0 0.6895"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_32" type="box"
+            pos="0.0000 5.0000 0.0050"
+            quat="0.7071 0 0 0.7071"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_33" type="box"
+            pos="-0.2453 4.9940 0.0050"
+            quat="0.6895 0 0 0.7242"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_34" type="box"
+            pos="-0.4901 4.9759 0.0050"
+            quat="0.6716 0 0 0.7410"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_35" type="box"
+            pos="-0.7337 4.9459 0.0050"
+            quat="0.6532 0 0 0.7572"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_36" type="box"
+            pos="-0.9755 4.9039 0.0050"
+            quat="0.6344 0 0 0.7730"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_37" type="box"
+            pos="-1.2149 4.8502 0.0050"
+            quat="0.6152 0 0 0.7883"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_38" type="box"
+            pos="-1.4514 4.7847 0.0050"
+            quat="0.5957 0 0 0.8032"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_39" type="box"
+            pos="-1.6844 4.7077 0.0050"
+            quat="0.5758 0 0 0.8176"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_40" type="box"
+            pos="-1.9134 4.6194 0.0050"
+            quat="0.5556 0 0 0.8315"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_41" type="box"
+            pos="-2.1378 4.5199 0.0050"
+            quat="0.5350 0 0 0.8449"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_42" type="box"
+            pos="-2.3570 4.4096 0.0050"
+            quat="0.5141 0 0 0.8577"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_43" type="box"
+            pos="-2.5705 4.2886 0.0050"
+            quat="0.4929 0 0 0.8701"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_44" type="box"
+            pos="-2.7779 4.1573 0.0050"
+            quat="0.4714 0 0 0.8819"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_45" type="box"
+            pos="-2.9785 4.0160 0.0050"
+            quat="0.4496 0 0 0.8932"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_46" type="box"
+            pos="-3.1720 3.8651 0.0050"
+            quat="0.4276 0 0 0.9040"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_47" type="box"
+            pos="-3.3578 3.7048 0.0050"
+            quat="0.4052 0 0 0.9142"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_48" type="box"
+            pos="-3.5355 3.5355 0.0050"
+            quat="0.3827 0 0 0.9239"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_49" type="box"
+            pos="-3.7048 3.3578 0.0050"
+            quat="0.3599 0 0 0.9330"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_50" type="box"
+            pos="-3.8651 3.1720 0.0050"
+            quat="0.3369 0 0 0.9415"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_51" type="box"
+            pos="-4.0160 2.9785 0.0050"
+            quat="0.3137 0 0 0.9495"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_52" type="box"
+            pos="-4.1573 2.7779 0.0050"
+            quat="0.2903 0 0 0.9569"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_53" type="box"
+            pos="-4.2886 2.5705 0.0050"
+            quat="0.2667 0 0 0.9638"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_54" type="box"
+            pos="-4.4096 2.3570 0.0050"
+            quat="0.2430 0 0 0.9700"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_55" type="box"
+            pos="-4.5199 2.1378 0.0050"
+            quat="0.2191 0 0 0.9757"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_56" type="box"
+            pos="-4.6194 1.9134 0.0050"
+            quat="0.1951 0 0 0.9808"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_57" type="box"
+            pos="-4.7077 1.6844 0.0050"
+            quat="0.1710 0 0 0.9853"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_58" type="box"
+            pos="-4.7847 1.4514 0.0050"
+            quat="0.1467 0 0 0.9892"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_59" type="box"
+            pos="-4.8502 1.2149 0.0050"
+            quat="0.1224 0 0 0.9925"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_60" type="box"
+            pos="-4.9039 0.9755 0.0050"
+            quat="0.0980 0 0 0.9952"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_61" type="box"
+            pos="-4.9459 0.7337 0.0050"
+            quat="0.0736 0 0 0.9973"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_62" type="box"
+            pos="-4.9759 0.4901 0.0050"
+            quat="0.0491 0 0 0.9988"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_63" type="box"
+            pos="-4.9940 0.2453 0.0050"
+            quat="0.0245 0 0 0.9997"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_64" type="box"
+            pos="-5.0000 0.0000 0.0050"
+            quat="0.0000 0 0 1.0000"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_65" type="box"
+            pos="-4.9940 -0.2453 0.0050"
+            quat="-0.0245 0 0 0.9997"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_66" type="box"
+            pos="-4.9759 -0.4901 0.0050"
+            quat="-0.0491 0 0 0.9988"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_67" type="box"
+            pos="-4.9459 -0.7337 0.0050"
+            quat="-0.0736 0 0 0.9973"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_68" type="box"
+            pos="-4.9039 -0.9755 0.0050"
+            quat="-0.0980 0 0 0.9952"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_69" type="box"
+            pos="-4.8502 -1.2149 0.0050"
+            quat="-0.1224 0 0 0.9925"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_70" type="box"
+            pos="-4.7847 -1.4514 0.0050"
+            quat="-0.1467 0 0 0.9892"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_71" type="box"
+            pos="-4.7077 -1.6844 0.0050"
+            quat="-0.1710 0 0 0.9853"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_72" type="box"
+            pos="-4.6194 -1.9134 0.0050"
+            quat="-0.1951 0 0 0.9808"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_73" type="box"
+            pos="-4.5199 -2.1378 0.0050"
+            quat="-0.2191 0 0 0.9757"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_74" type="box"
+            pos="-4.4096 -2.3570 0.0050"
+            quat="-0.2430 0 0 0.9700"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_75" type="box"
+            pos="-4.2886 -2.5705 0.0050"
+            quat="-0.2667 0 0 0.9638"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_76" type="box"
+            pos="-4.1573 -2.7779 0.0050"
+            quat="-0.2903 0 0 0.9569"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_77" type="box"
+            pos="-4.0160 -2.9785 0.0050"
+            quat="-0.3137 0 0 0.9495"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_78" type="box"
+            pos="-3.8651 -3.1720 0.0050"
+            quat="-0.3369 0 0 0.9415"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_79" type="box"
+            pos="-3.7048 -3.3578 0.0050"
+            quat="-0.3599 0 0 0.9330"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_80" type="box"
+            pos="-3.5355 -3.5355 0.0050"
+            quat="-0.3827 0 0 0.9239"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_81" type="box"
+            pos="-3.3578 -3.7048 0.0050"
+            quat="-0.4052 0 0 0.9142"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_82" type="box"
+            pos="-3.1720 -3.8651 0.0050"
+            quat="-0.4276 0 0 0.9040"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_83" type="box"
+            pos="-2.9785 -4.0160 0.0050"
+            quat="-0.4496 0 0 0.8932"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_84" type="box"
+            pos="-2.7779 -4.1573 0.0050"
+            quat="-0.4714 0 0 0.8819"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_85" type="box"
+            pos="-2.5705 -4.2886 0.0050"
+            quat="-0.4929 0 0 0.8701"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_86" type="box"
+            pos="-2.3570 -4.4096 0.0050"
+            quat="-0.5141 0 0 0.8577"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_87" type="box"
+            pos="-2.1378 -4.5199 0.0050"
+            quat="-0.5350 0 0 0.8449"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_88" type="box"
+            pos="-1.9134 -4.6194 0.0050"
+            quat="-0.5556 0 0 0.8315"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_89" type="box"
+            pos="-1.6844 -4.7077 0.0050"
+            quat="-0.5758 0 0 0.8176"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_90" type="box"
+            pos="-1.4514 -4.7847 0.0050"
+            quat="-0.5957 0 0 0.8032"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_91" type="box"
+            pos="-1.2149 -4.8502 0.0050"
+            quat="-0.6152 0 0 0.7883"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_92" type="box"
+            pos="-0.9755 -4.9039 0.0050"
+            quat="-0.6344 0 0 0.7730"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_93" type="box"
+            pos="-0.7337 -4.9459 0.0050"
+            quat="-0.6532 0 0 0.7572"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_94" type="box"
+            pos="-0.4901 -4.9759 0.0050"
+            quat="-0.6716 0 0 0.7410"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_95" type="box"
+            pos="-0.2453 -4.9940 0.0050"
+            quat="-0.6895 0 0 0.7242"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_96" type="box"
+            pos="-0.0000 -5.0000 0.0050"
+            quat="-0.7071 0 0 0.7071"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_97" type="box"
+            pos="0.2453 -4.9940 0.0050"
+            quat="-0.7242 0 0 0.6895"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_98" type="box"
+            pos="0.4901 -4.9759 0.0050"
+            quat="-0.7410 0 0 0.6716"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_99" type="box"
+            pos="0.7337 -4.9459 0.0050"
+            quat="-0.7572 0 0 0.6532"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_100" type="box"
+            pos="0.9755 -4.9039 0.0050"
+            quat="-0.7730 0 0 0.6344"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_101" type="box"
+            pos="1.2149 -4.8502 0.0050"
+            quat="-0.7883 0 0 0.6152"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_102" type="box"
+            pos="1.4514 -4.7847 0.0050"
+            quat="-0.8032 0 0 0.5957"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_103" type="box"
+            pos="1.6844 -4.7077 0.0050"
+            quat="-0.8176 0 0 0.5758"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_104" type="box"
+            pos="1.9134 -4.6194 0.0050"
+            quat="-0.8315 0 0 0.5556"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_105" type="box"
+            pos="2.1378 -4.5199 0.0050"
+            quat="-0.8449 0 0 0.5350"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_106" type="box"
+            pos="2.3570 -4.4096 0.0050"
+            quat="-0.8577 0 0 0.5141"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_107" type="box"
+            pos="2.5705 -4.2886 0.0050"
+            quat="-0.8701 0 0 0.4929"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_108" type="box"
+            pos="2.7779 -4.1573 0.0050"
+            quat="-0.8819 0 0 0.4714"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_109" type="box"
+            pos="2.9785 -4.0160 0.0050"
+            quat="-0.8932 0 0 0.4496"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_110" type="box"
+            pos="3.1720 -3.8651 0.0050"
+            quat="-0.9040 0 0 0.4276"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_111" type="box"
+            pos="3.3578 -3.7048 0.0050"
+            quat="-0.9142 0 0 0.4052"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_112" type="box"
+            pos="3.5355 -3.5355 0.0050"
+            quat="-0.9239 0 0 0.3827"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_113" type="box"
+            pos="3.7048 -3.3578 0.0050"
+            quat="-0.9330 0 0 0.3599"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_114" type="box"
+            pos="3.8651 -3.1720 0.0050"
+            quat="-0.9415 0 0 0.3369"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_115" type="box"
+            pos="4.0160 -2.9785 0.0050"
+            quat="-0.9495 0 0 0.3137"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_116" type="box"
+            pos="4.1573 -2.7779 0.0050"
+            quat="-0.9569 0 0 0.2903"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_117" type="box"
+            pos="4.2886 -2.5705 0.0050"
+            quat="-0.9638 0 0 0.2667"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_118" type="box"
+            pos="4.4096 -2.3570 0.0050"
+            quat="-0.9700 0 0 0.2430"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_119" type="box"
+            pos="4.5199 -2.1378 0.0050"
+            quat="-0.9757 0 0 0.2191"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_120" type="box"
+            pos="4.6194 -1.9134 0.0050"
+            quat="-0.9808 0 0 0.1951"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_121" type="box"
+            pos="4.7077 -1.6844 0.0050"
+            quat="-0.9853 0 0 0.1710"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_122" type="box"
+            pos="4.7847 -1.4514 0.0050"
+            quat="-0.9892 0 0 0.1467"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_123" type="box"
+            pos="4.8502 -1.2149 0.0050"
+            quat="-0.9925 0 0 0.1224"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_124" type="box"
+            pos="4.9039 -0.9755 0.0050"
+            quat="-0.9952 0 0 0.0980"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_125" type="box"
+            pos="4.9459 -0.7337 0.0050"
+            quat="-0.9973 0 0 0.0736"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_126" type="box"
+            pos="4.9759 -0.4901 0.0050"
+            quat="-0.9988 0 0 0.0491"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+    <body>
+      <geom name="seg_127" type="box"
+            pos="4.9940 -0.2453 0.0050"
+            quat="-0.9997 0 0 0.0245"
+            size="1.0000 0.1227 0.0050"
+            material="mat_track"/>
+    </body>
+
+    <geom name="track_overlay" type="cylinder"
+          pos="0 0 0.0110"
+          size="6.0000 0.0060"
+          material="mat_track" contype="0" conaffinity="0"/>
+
+    <!-- ¬нутренн€€ стена -->
+    <body>
+      <geom name="in_wall_0" type="box"
+            pos="3.9000 0.0000 0.2500"
+            quat="1.0000 0 0 0.0000"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_1" type="box"
+            pos="3.8953 0.1914 0.2500"
+            quat="0.9997 0 0 0.0245"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_2" type="box"
+            pos="3.8812 0.3823 0.2500"
+            quat="0.9988 0 0 0.0491"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_3" type="box"
+            pos="3.8578 0.5722 0.2500"
+            quat="0.9973 0 0 0.0736"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_4" type="box"
+            pos="3.8251 0.7609 0.2500"
+            quat="0.9952 0 0 0.0980"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_5" type="box"
+            pos="3.7831 0.9476 0.2500"
+            quat="0.9925 0 0 0.1224"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_6" type="box"
+            pos="3.7321 1.1321 0.2500"
+            quat="0.9892 0 0 0.1467"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_7" type="box"
+            pos="3.6720 1.3139 0.2500"
+            quat="0.9853 0 0 0.1710"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_8" type="box"
+            pos="3.6031 1.4925 0.2500"
+            quat="0.9808 0 0 0.1951"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_9" type="box"
+            pos="3.5256 1.6675 0.2500"
+            quat="0.9757 0 0 0.2191"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_10" type="box"
+            pos="3.4395 1.8384 0.2500"
+            quat="0.9700 0 0 0.2430"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_11" type="box"
+            pos="3.3451 2.0050 0.2500"
+            quat="0.9638 0 0 0.2667"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_12" type="box"
+            pos="3.2427 2.1667 0.2500"
+            quat="0.9569 0 0 0.2903"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_13" type="box"
+            pos="3.1325 2.3232 0.2500"
+            quat="0.9495 0 0 0.3137"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_14" type="box"
+            pos="3.0147 2.4741 0.2500"
+            quat="0.9415 0 0 0.3369"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_15" type="box"
+            pos="2.8897 2.6191 0.2500"
+            quat="0.9330 0 0 0.3599"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_16" type="box"
+            pos="2.7577 2.7577 0.2500"
+            quat="0.9239 0 0 0.3827"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_17" type="box"
+            pos="2.6191 2.8897 0.2500"
+            quat="0.9142 0 0 0.4052"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_18" type="box"
+            pos="2.4741 3.0147 0.2500"
+            quat="0.9040 0 0 0.4276"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_19" type="box"
+            pos="2.3232 3.1325 0.2500"
+            quat="0.8932 0 0 0.4496"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_20" type="box"
+            pos="2.1667 3.2427 0.2500"
+            quat="0.8819 0 0 0.4714"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_21" type="box"
+            pos="2.0050 3.3451 0.2500"
+            quat="0.8701 0 0 0.4929"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_22" type="box"
+            pos="1.8384 3.4395 0.2500"
+            quat="0.8577 0 0 0.5141"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_23" type="box"
+            pos="1.6675 3.5256 0.2500"
+            quat="0.8449 0 0 0.5350"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_24" type="box"
+            pos="1.4925 3.6031 0.2500"
+            quat="0.8315 0 0 0.5556"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_25" type="box"
+            pos="1.3139 3.6720 0.2500"
+            quat="0.8176 0 0 0.5758"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_26" type="box"
+            pos="1.1321 3.7321 0.2500"
+            quat="0.8032 0 0 0.5957"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_27" type="box"
+            pos="0.9476 3.7831 0.2500"
+            quat="0.7883 0 0 0.6152"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_28" type="box"
+            pos="0.7609 3.8251 0.2500"
+            quat="0.7730 0 0 0.6344"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_29" type="box"
+            pos="0.5722 3.8578 0.2500"
+            quat="0.7572 0 0 0.6532"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_30" type="box"
+            pos="0.3823 3.8812 0.2500"
+            quat="0.7410 0 0 0.6716"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_31" type="box"
+            pos="0.1914 3.8953 0.2500"
+            quat="0.7242 0 0 0.6895"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_32" type="box"
+            pos="0.0000 3.9000 0.2500"
+            quat="0.7071 0 0 0.7071"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_33" type="box"
+            pos="-0.1914 3.8953 0.2500"
+            quat="0.6895 0 0 0.7242"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_34" type="box"
+            pos="-0.3823 3.8812 0.2500"
+            quat="0.6716 0 0 0.7410"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_35" type="box"
+            pos="-0.5722 3.8578 0.2500"
+            quat="0.6532 0 0 0.7572"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_36" type="box"
+            pos="-0.7609 3.8251 0.2500"
+            quat="0.6344 0 0 0.7730"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_37" type="box"
+            pos="-0.9476 3.7831 0.2500"
+            quat="0.6152 0 0 0.7883"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_38" type="box"
+            pos="-1.1321 3.7321 0.2500"
+            quat="0.5957 0 0 0.8032"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_39" type="box"
+            pos="-1.3139 3.6720 0.2500"
+            quat="0.5758 0 0 0.8176"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_40" type="box"
+            pos="-1.4925 3.6031 0.2500"
+            quat="0.5556 0 0 0.8315"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_41" type="box"
+            pos="-1.6675 3.5256 0.2500"
+            quat="0.5350 0 0 0.8449"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_42" type="box"
+            pos="-1.8384 3.4395 0.2500"
+            quat="0.5141 0 0 0.8577"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_43" type="box"
+            pos="-2.0050 3.3451 0.2500"
+            quat="0.4929 0 0 0.8701"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_44" type="box"
+            pos="-2.1667 3.2427 0.2500"
+            quat="0.4714 0 0 0.8819"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_45" type="box"
+            pos="-2.3232 3.1325 0.2500"
+            quat="0.4496 0 0 0.8932"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_46" type="box"
+            pos="-2.4741 3.0147 0.2500"
+            quat="0.4276 0 0 0.9040"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_47" type="box"
+            pos="-2.6191 2.8897 0.2500"
+            quat="0.4052 0 0 0.9142"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_48" type="box"
+            pos="-2.7577 2.7577 0.2500"
+            quat="0.3827 0 0 0.9239"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_49" type="box"
+            pos="-2.8897 2.6191 0.2500"
+            quat="0.3599 0 0 0.9330"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_50" type="box"
+            pos="-3.0147 2.4741 0.2500"
+            quat="0.3369 0 0 0.9415"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_51" type="box"
+            pos="-3.1325 2.3232 0.2500"
+            quat="0.3137 0 0 0.9495"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_52" type="box"
+            pos="-3.2427 2.1667 0.2500"
+            quat="0.2903 0 0 0.9569"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_53" type="box"
+            pos="-3.3451 2.0050 0.2500"
+            quat="0.2667 0 0 0.9638"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_54" type="box"
+            pos="-3.4395 1.8384 0.2500"
+            quat="0.2430 0 0 0.9700"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_55" type="box"
+            pos="-3.5256 1.6675 0.2500"
+            quat="0.2191 0 0 0.9757"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_56" type="box"
+            pos="-3.6031 1.4925 0.2500"
+            quat="0.1951 0 0 0.9808"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_57" type="box"
+            pos="-3.6720 1.3139 0.2500"
+            quat="0.1710 0 0 0.9853"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_58" type="box"
+            pos="-3.7321 1.1321 0.2500"
+            quat="0.1467 0 0 0.9892"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_59" type="box"
+            pos="-3.7831 0.9476 0.2500"
+            quat="0.1224 0 0 0.9925"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_60" type="box"
+            pos="-3.8251 0.7609 0.2500"
+            quat="0.0980 0 0 0.9952"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_61" type="box"
+            pos="-3.8578 0.5722 0.2500"
+            quat="0.0736 0 0 0.9973"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_62" type="box"
+            pos="-3.8812 0.3823 0.2500"
+            quat="0.0491 0 0 0.9988"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_63" type="box"
+            pos="-3.8953 0.1914 0.2500"
+            quat="0.0245 0 0 0.9997"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_64" type="box"
+            pos="-3.9000 0.0000 0.2500"
+            quat="0.0000 0 0 1.0000"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_65" type="box"
+            pos="-3.8953 -0.1914 0.2500"
+            quat="-0.0245 0 0 0.9997"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_66" type="box"
+            pos="-3.8812 -0.3823 0.2500"
+            quat="-0.0491 0 0 0.9988"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_67" type="box"
+            pos="-3.8578 -0.5722 0.2500"
+            quat="-0.0736 0 0 0.9973"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_68" type="box"
+            pos="-3.8251 -0.7609 0.2500"
+            quat="-0.0980 0 0 0.9952"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_69" type="box"
+            pos="-3.7831 -0.9476 0.2500"
+            quat="-0.1224 0 0 0.9925"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_70" type="box"
+            pos="-3.7321 -1.1321 0.2500"
+            quat="-0.1467 0 0 0.9892"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_71" type="box"
+            pos="-3.6720 -1.3139 0.2500"
+            quat="-0.1710 0 0 0.9853"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_72" type="box"
+            pos="-3.6031 -1.4925 0.2500"
+            quat="-0.1951 0 0 0.9808"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_73" type="box"
+            pos="-3.5256 -1.6675 0.2500"
+            quat="-0.2191 0 0 0.9757"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_74" type="box"
+            pos="-3.4395 -1.8384 0.2500"
+            quat="-0.2430 0 0 0.9700"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_75" type="box"
+            pos="-3.3451 -2.0050 0.2500"
+            quat="-0.2667 0 0 0.9638"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_76" type="box"
+            pos="-3.2427 -2.1667 0.2500"
+            quat="-0.2903 0 0 0.9569"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_77" type="box"
+            pos="-3.1325 -2.3232 0.2500"
+            quat="-0.3137 0 0 0.9495"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_78" type="box"
+            pos="-3.0147 -2.4741 0.2500"
+            quat="-0.3369 0 0 0.9415"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_79" type="box"
+            pos="-2.8897 -2.6191 0.2500"
+            quat="-0.3599 0 0 0.9330"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_80" type="box"
+            pos="-2.7577 -2.7577 0.2500"
+            quat="-0.3827 0 0 0.9239"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_81" type="box"
+            pos="-2.6191 -2.8897 0.2500"
+            quat="-0.4052 0 0 0.9142"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_82" type="box"
+            pos="-2.4741 -3.0147 0.2500"
+            quat="-0.4276 0 0 0.9040"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_83" type="box"
+            pos="-2.3232 -3.1325 0.2500"
+            quat="-0.4496 0 0 0.8932"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_84" type="box"
+            pos="-2.1667 -3.2427 0.2500"
+            quat="-0.4714 0 0 0.8819"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_85" type="box"
+            pos="-2.0050 -3.3451 0.2500"
+            quat="-0.4929 0 0 0.8701"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_86" type="box"
+            pos="-1.8384 -3.4395 0.2500"
+            quat="-0.5141 0 0 0.8577"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_87" type="box"
+            pos="-1.6675 -3.5256 0.2500"
+            quat="-0.5350 0 0 0.8449"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_88" type="box"
+            pos="-1.4925 -3.6031 0.2500"
+            quat="-0.5556 0 0 0.8315"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_89" type="box"
+            pos="-1.3139 -3.6720 0.2500"
+            quat="-0.5758 0 0 0.8176"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_90" type="box"
+            pos="-1.1321 -3.7321 0.2500"
+            quat="-0.5957 0 0 0.8032"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_91" type="box"
+            pos="-0.9476 -3.7831 0.2500"
+            quat="-0.6152 0 0 0.7883"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_92" type="box"
+            pos="-0.7609 -3.8251 0.2500"
+            quat="-0.6344 0 0 0.7730"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_93" type="box"
+            pos="-0.5722 -3.8578 0.2500"
+            quat="-0.6532 0 0 0.7572"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_94" type="box"
+            pos="-0.3823 -3.8812 0.2500"
+            quat="-0.6716 0 0 0.7410"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_95" type="box"
+            pos="-0.1914 -3.8953 0.2500"
+            quat="-0.6895 0 0 0.7242"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_96" type="box"
+            pos="-0.0000 -3.9000 0.2500"
+            quat="-0.7071 0 0 0.7071"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_97" type="box"
+            pos="0.1914 -3.8953 0.2500"
+            quat="-0.7242 0 0 0.6895"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_98" type="box"
+            pos="0.3823 -3.8812 0.2500"
+            quat="-0.7410 0 0 0.6716"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_99" type="box"
+            pos="0.5722 -3.8578 0.2500"
+            quat="-0.7572 0 0 0.6532"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_100" type="box"
+            pos="0.7609 -3.8251 0.2500"
+            quat="-0.7730 0 0 0.6344"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_101" type="box"
+            pos="0.9476 -3.7831 0.2500"
+            quat="-0.7883 0 0 0.6152"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_102" type="box"
+            pos="1.1321 -3.7321 0.2500"
+            quat="-0.8032 0 0 0.5957"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_103" type="box"
+            pos="1.3139 -3.6720 0.2500"
+            quat="-0.8176 0 0 0.5758"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_104" type="box"
+            pos="1.4925 -3.6031 0.2500"
+            quat="-0.8315 0 0 0.5556"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_105" type="box"
+            pos="1.6675 -3.5256 0.2500"
+            quat="-0.8449 0 0 0.5350"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_106" type="box"
+            pos="1.8384 -3.4395 0.2500"
+            quat="-0.8577 0 0 0.5141"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_107" type="box"
+            pos="2.0050 -3.3451 0.2500"
+            quat="-0.8701 0 0 0.4929"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_108" type="box"
+            pos="2.1667 -3.2427 0.2500"
+            quat="-0.8819 0 0 0.4714"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_109" type="box"
+            pos="2.3232 -3.1325 0.2500"
+            quat="-0.8932 0 0 0.4496"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_110" type="box"
+            pos="2.4741 -3.0147 0.2500"
+            quat="-0.9040 0 0 0.4276"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_111" type="box"
+            pos="2.6191 -2.8897 0.2500"
+            quat="-0.9142 0 0 0.4052"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_112" type="box"
+            pos="2.7577 -2.7577 0.2500"
+            quat="-0.9239 0 0 0.3827"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_113" type="box"
+            pos="2.8897 -2.6191 0.2500"
+            quat="-0.9330 0 0 0.3599"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_114" type="box"
+            pos="3.0147 -2.4741 0.2500"
+            quat="-0.9415 0 0 0.3369"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_115" type="box"
+            pos="3.1325 -2.3232 0.2500"
+            quat="-0.9495 0 0 0.3137"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_116" type="box"
+            pos="3.2427 -2.1667 0.2500"
+            quat="-0.9569 0 0 0.2903"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_117" type="box"
+            pos="3.3451 -2.0050 0.2500"
+            quat="-0.9638 0 0 0.2667"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_118" type="box"
+            pos="3.4395 -1.8384 0.2500"
+            quat="-0.9700 0 0 0.2430"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_119" type="box"
+            pos="3.5256 -1.6675 0.2500"
+            quat="-0.9757 0 0 0.2191"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_120" type="box"
+            pos="3.6031 -1.4925 0.2500"
+            quat="-0.9808 0 0 0.1951"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_121" type="box"
+            pos="3.6720 -1.3139 0.2500"
+            quat="-0.9853 0 0 0.1710"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_122" type="box"
+            pos="3.7321 -1.1321 0.2500"
+            quat="-0.9892 0 0 0.1467"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_123" type="box"
+            pos="3.7831 -0.9476 0.2500"
+            quat="-0.9925 0 0 0.1224"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_124" type="box"
+            pos="3.8251 -0.7609 0.2500"
+            quat="-0.9952 0 0 0.0980"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_125" type="box"
+            pos="3.8578 -0.5722 0.2500"
+            quat="-0.9973 0 0 0.0736"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_126" type="box"
+            pos="3.8812 -0.3823 0.2500"
+            quat="-0.9988 0 0 0.0491"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="in_wall_127" type="box"
+            pos="3.8953 -0.1914 0.2500"
+            quat="-0.9997 0 0 0.0245"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+
+    <!-- ¬нешн€€ стена -->
+    <body>
+      <geom name="out_wall_0" type="box"
+            pos="6.1000 0.0000 0.2500"
+            quat="1.0000 0 0 0.0000"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_1" type="box"
+            pos="6.0927 0.2993 0.2500"
+            quat="0.9997 0 0 0.0245"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_2" type="box"
+            pos="6.0706 0.5979 0.2500"
+            quat="0.9988 0 0 0.0491"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_3" type="box"
+            pos="6.0340 0.8951 0.2500"
+            quat="0.9973 0 0 0.0736"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_4" type="box"
+            pos="5.9828 1.1901 0.2500"
+            quat="0.9952 0 0 0.0980"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_5" type="box"
+            pos="5.9172 1.4822 0.2500"
+            quat="0.9925 0 0 0.1224"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_6" type="box"
+            pos="5.8373 1.7707 0.2500"
+            quat="0.9892 0 0 0.1467"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_7" type="box"
+            pos="5.7434 2.0550 0.2500"
+            quat="0.9853 0 0 0.1710"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_8" type="box"
+            pos="5.6357 2.3344 0.2500"
+            quat="0.9808 0 0 0.1951"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_9" type="box"
+            pos="5.5143 2.6081 0.2500"
+            quat="0.9757 0 0 0.2191"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_10" type="box"
+            pos="5.3797 2.8755 0.2500"
+            quat="0.9700 0 0 0.2430"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_11" type="box"
+            pos="5.2321 3.1360 0.2500"
+            quat="0.9638 0 0 0.2667"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_12" type="box"
+            pos="5.0720 3.3890 0.2500"
+            quat="0.9569 0 0 0.2903"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_13" type="box"
+            pos="4.8996 3.6338 0.2500"
+            quat="0.9495 0 0 0.3137"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_14" type="box"
+            pos="4.7154 3.8698 0.2500"
+            quat="0.9415 0 0 0.3369"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_15" type="box"
+            pos="4.5198 4.0965 0.2500"
+            quat="0.9330 0 0 0.3599"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_16" type="box"
+            pos="4.3134 4.3134 0.2500"
+            quat="0.9239 0 0 0.3827"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_17" type="box"
+            pos="4.0965 4.5198 0.2500"
+            quat="0.9142 0 0 0.4052"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_18" type="box"
+            pos="3.8698 4.7154 0.2500"
+            quat="0.9040 0 0 0.4276"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_19" type="box"
+            pos="3.6338 4.8996 0.2500"
+            quat="0.8932 0 0 0.4496"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_20" type="box"
+            pos="3.3890 5.0720 0.2500"
+            quat="0.8819 0 0 0.4714"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_21" type="box"
+            pos="3.1360 5.2321 0.2500"
+            quat="0.8701 0 0 0.4929"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_22" type="box"
+            pos="2.8755 5.3797 0.2500"
+            quat="0.8577 0 0 0.5141"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_23" type="box"
+            pos="2.6081 5.5143 0.2500"
+            quat="0.8449 0 0 0.5350"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_24" type="box"
+            pos="2.3344 5.6357 0.2500"
+            quat="0.8315 0 0 0.5556"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_25" type="box"
+            pos="2.0550 5.7434 0.2500"
+            quat="0.8176 0 0 0.5758"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_26" type="box"
+            pos="1.7707 5.8373 0.2500"
+            quat="0.8032 0 0 0.5957"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_27" type="box"
+            pos="1.4822 5.9172 0.2500"
+            quat="0.7883 0 0 0.6152"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_28" type="box"
+            pos="1.1901 5.9828 0.2500"
+            quat="0.7730 0 0 0.6344"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_29" type="box"
+            pos="0.8951 6.0340 0.2500"
+            quat="0.7572 0 0 0.6532"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_30" type="box"
+            pos="0.5979 6.0706 0.2500"
+            quat="0.7410 0 0 0.6716"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_31" type="box"
+            pos="0.2993 6.0927 0.2500"
+            quat="0.7242 0 0 0.6895"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_32" type="box"
+            pos="0.0000 6.1000 0.2500"
+            quat="0.7071 0 0 0.7071"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_33" type="box"
+            pos="-0.2993 6.0927 0.2500"
+            quat="0.6895 0 0 0.7242"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_34" type="box"
+            pos="-0.5979 6.0706 0.2500"
+            quat="0.6716 0 0 0.7410"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_35" type="box"
+            pos="-0.8951 6.0340 0.2500"
+            quat="0.6532 0 0 0.7572"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_36" type="box"
+            pos="-1.1901 5.9828 0.2500"
+            quat="0.6344 0 0 0.7730"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_37" type="box"
+            pos="-1.4822 5.9172 0.2500"
+            quat="0.6152 0 0 0.7883"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_38" type="box"
+            pos="-1.7707 5.8373 0.2500"
+            quat="0.5957 0 0 0.8032"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_39" type="box"
+            pos="-2.0550 5.7434 0.2500"
+            quat="0.5758 0 0 0.8176"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_40" type="box"
+            pos="-2.3344 5.6357 0.2500"
+            quat="0.5556 0 0 0.8315"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_41" type="box"
+            pos="-2.6081 5.5143 0.2500"
+            quat="0.5350 0 0 0.8449"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_42" type="box"
+            pos="-2.8755 5.3797 0.2500"
+            quat="0.5141 0 0 0.8577"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_43" type="box"
+            pos="-3.1360 5.2321 0.2500"
+            quat="0.4929 0 0 0.8701"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_44" type="box"
+            pos="-3.3890 5.0720 0.2500"
+            quat="0.4714 0 0 0.8819"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_45" type="box"
+            pos="-3.6338 4.8996 0.2500"
+            quat="0.4496 0 0 0.8932"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_46" type="box"
+            pos="-3.8698 4.7154 0.2500"
+            quat="0.4276 0 0 0.9040"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_47" type="box"
+            pos="-4.0965 4.5198 0.2500"
+            quat="0.4052 0 0 0.9142"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_48" type="box"
+            pos="-4.3134 4.3134 0.2500"
+            quat="0.3827 0 0 0.9239"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_49" type="box"
+            pos="-4.5198 4.0965 0.2500"
+            quat="0.3599 0 0 0.9330"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_50" type="box"
+            pos="-4.7154 3.8698 0.2500"
+            quat="0.3369 0 0 0.9415"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_51" type="box"
+            pos="-4.8996 3.6338 0.2500"
+            quat="0.3137 0 0 0.9495"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_52" type="box"
+            pos="-5.0720 3.3890 0.2500"
+            quat="0.2903 0 0 0.9569"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_53" type="box"
+            pos="-5.2321 3.1360 0.2500"
+            quat="0.2667 0 0 0.9638"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_54" type="box"
+            pos="-5.3797 2.8755 0.2500"
+            quat="0.2430 0 0 0.9700"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_55" type="box"
+            pos="-5.5143 2.6081 0.2500"
+            quat="0.2191 0 0 0.9757"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_56" type="box"
+            pos="-5.6357 2.3344 0.2500"
+            quat="0.1951 0 0 0.9808"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_57" type="box"
+            pos="-5.7434 2.0550 0.2500"
+            quat="0.1710 0 0 0.9853"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_58" type="box"
+            pos="-5.8373 1.7707 0.2500"
+            quat="0.1467 0 0 0.9892"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_59" type="box"
+            pos="-5.9172 1.4822 0.2500"
+            quat="0.1224 0 0 0.9925"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_60" type="box"
+            pos="-5.9828 1.1901 0.2500"
+            quat="0.0980 0 0 0.9952"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_61" type="box"
+            pos="-6.0340 0.8951 0.2500"
+            quat="0.0736 0 0 0.9973"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_62" type="box"
+            pos="-6.0706 0.5979 0.2500"
+            quat="0.0491 0 0 0.9988"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_63" type="box"
+            pos="-6.0927 0.2993 0.2500"
+            quat="0.0245 0 0 0.9997"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_64" type="box"
+            pos="-6.1000 0.0000 0.2500"
+            quat="0.0000 0 0 1.0000"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_65" type="box"
+            pos="-6.0927 -0.2993 0.2500"
+            quat="-0.0245 0 0 0.9997"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_66" type="box"
+            pos="-6.0706 -0.5979 0.2500"
+            quat="-0.0491 0 0 0.9988"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_67" type="box"
+            pos="-6.0340 -0.8951 0.2500"
+            quat="-0.0736 0 0 0.9973"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_68" type="box"
+            pos="-5.9828 -1.1901 0.2500"
+            quat="-0.0980 0 0 0.9952"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_69" type="box"
+            pos="-5.9172 -1.4822 0.2500"
+            quat="-0.1224 0 0 0.9925"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_70" type="box"
+            pos="-5.8373 -1.7707 0.2500"
+            quat="-0.1467 0 0 0.9892"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_71" type="box"
+            pos="-5.7434 -2.0550 0.2500"
+            quat="-0.1710 0 0 0.9853"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_72" type="box"
+            pos="-5.6357 -2.3344 0.2500"
+            quat="-0.1951 0 0 0.9808"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_73" type="box"
+            pos="-5.5143 -2.6081 0.2500"
+            quat="-0.2191 0 0 0.9757"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_74" type="box"
+            pos="-5.3797 -2.8755 0.2500"
+            quat="-0.2430 0 0 0.9700"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_75" type="box"
+            pos="-5.2321 -3.1360 0.2500"
+            quat="-0.2667 0 0 0.9638"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_76" type="box"
+            pos="-5.0720 -3.3890 0.2500"
+            quat="-0.2903 0 0 0.9569"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_77" type="box"
+            pos="-4.8996 -3.6338 0.2500"
+            quat="-0.3137 0 0 0.9495"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_78" type="box"
+            pos="-4.7154 -3.8698 0.2500"
+            quat="-0.3369 0 0 0.9415"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_79" type="box"
+            pos="-4.5198 -4.0965 0.2500"
+            quat="-0.3599 0 0 0.9330"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_80" type="box"
+            pos="-4.3134 -4.3134 0.2500"
+            quat="-0.3827 0 0 0.9239"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_81" type="box"
+            pos="-4.0965 -4.5198 0.2500"
+            quat="-0.4052 0 0 0.9142"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_82" type="box"
+            pos="-3.8698 -4.7154 0.2500"
+            quat="-0.4276 0 0 0.9040"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_83" type="box"
+            pos="-3.6338 -4.8996 0.2500"
+            quat="-0.4496 0 0 0.8932"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_84" type="box"
+            pos="-3.3890 -5.0720 0.2500"
+            quat="-0.4714 0 0 0.8819"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_85" type="box"
+            pos="-3.1360 -5.2321 0.2500"
+            quat="-0.4929 0 0 0.8701"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_86" type="box"
+            pos="-2.8755 -5.3797 0.2500"
+            quat="-0.5141 0 0 0.8577"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_87" type="box"
+            pos="-2.6081 -5.5143 0.2500"
+            quat="-0.5350 0 0 0.8449"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_88" type="box"
+            pos="-2.3344 -5.6357 0.2500"
+            quat="-0.5556 0 0 0.8315"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_89" type="box"
+            pos="-2.0550 -5.7434 0.2500"
+            quat="-0.5758 0 0 0.8176"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_90" type="box"
+            pos="-1.7707 -5.8373 0.2500"
+            quat="-0.5957 0 0 0.8032"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_91" type="box"
+            pos="-1.4822 -5.9172 0.2500"
+            quat="-0.6152 0 0 0.7883"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_92" type="box"
+            pos="-1.1901 -5.9828 0.2500"
+            quat="-0.6344 0 0 0.7730"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_93" type="box"
+            pos="-0.8951 -6.0340 0.2500"
+            quat="-0.6532 0 0 0.7572"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_94" type="box"
+            pos="-0.5979 -6.0706 0.2500"
+            quat="-0.6716 0 0 0.7410"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_95" type="box"
+            pos="-0.2993 -6.0927 0.2500"
+            quat="-0.6895 0 0 0.7242"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_96" type="box"
+            pos="-0.0000 -6.1000 0.2500"
+            quat="-0.7071 0 0 0.7071"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_97" type="box"
+            pos="0.2993 -6.0927 0.2500"
+            quat="-0.7242 0 0 0.6895"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_98" type="box"
+            pos="0.5979 -6.0706 0.2500"
+            quat="-0.7410 0 0 0.6716"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_99" type="box"
+            pos="0.8951 -6.0340 0.2500"
+            quat="-0.7572 0 0 0.6532"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_100" type="box"
+            pos="1.1901 -5.9828 0.2500"
+            quat="-0.7730 0 0 0.6344"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_101" type="box"
+            pos="1.4822 -5.9172 0.2500"
+            quat="-0.7883 0 0 0.6152"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_102" type="box"
+            pos="1.7707 -5.8373 0.2500"
+            quat="-0.8032 0 0 0.5957"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_103" type="box"
+            pos="2.0550 -5.7434 0.2500"
+            quat="-0.8176 0 0 0.5758"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_104" type="box"
+            pos="2.3344 -5.6357 0.2500"
+            quat="-0.8315 0 0 0.5556"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_105" type="box"
+            pos="2.6081 -5.5143 0.2500"
+            quat="-0.8449 0 0 0.5350"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_106" type="box"
+            pos="2.8755 -5.3797 0.2500"
+            quat="-0.8577 0 0 0.5141"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_107" type="box"
+            pos="3.1360 -5.2321 0.2500"
+            quat="-0.8701 0 0 0.4929"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_108" type="box"
+            pos="3.3890 -5.0720 0.2500"
+            quat="-0.8819 0 0 0.4714"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_109" type="box"
+            pos="3.6338 -4.8996 0.2500"
+            quat="-0.8932 0 0 0.4496"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_110" type="box"
+            pos="3.8698 -4.7154 0.2500"
+            quat="-0.9040 0 0 0.4276"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_111" type="box"
+            pos="4.0965 -4.5198 0.2500"
+            quat="-0.9142 0 0 0.4052"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_112" type="box"
+            pos="4.3134 -4.3134 0.2500"
+            quat="-0.9239 0 0 0.3827"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_113" type="box"
+            pos="4.5198 -4.0965 0.2500"
+            quat="-0.9330 0 0 0.3599"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_114" type="box"
+            pos="4.7154 -3.8698 0.2500"
+            quat="-0.9415 0 0 0.3369"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_115" type="box"
+            pos="4.8996 -3.6338 0.2500"
+            quat="-0.9495 0 0 0.3137"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_116" type="box"
+            pos="5.0720 -3.3890 0.2500"
+            quat="-0.9569 0 0 0.2903"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_117" type="box"
+            pos="5.2321 -3.1360 0.2500"
+            quat="-0.9638 0 0 0.2667"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_118" type="box"
+            pos="5.3797 -2.8755 0.2500"
+            quat="-0.9700 0 0 0.2430"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_119" type="box"
+            pos="5.5143 -2.6081 0.2500"
+            quat="-0.9757 0 0 0.2191"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_120" type="box"
+            pos="5.6357 -2.3344 0.2500"
+            quat="-0.9808 0 0 0.1951"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_121" type="box"
+            pos="5.7434 -2.0550 0.2500"
+            quat="-0.9853 0 0 0.1710"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_122" type="box"
+            pos="5.8373 -1.7707 0.2500"
+            quat="-0.9892 0 0 0.1467"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_123" type="box"
+            pos="5.9172 -1.4822 0.2500"
+            quat="-0.9925 0 0 0.1224"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_124" type="box"
+            pos="5.9828 -1.1901 0.2500"
+            quat="-0.9952 0 0 0.0980"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_125" type="box"
+            pos="6.0340 -0.8951 0.2500"
+            quat="-0.9973 0 0 0.0736"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_126" type="box"
+            pos="6.0706 -0.5979 0.2500"
+            quat="-0.9988 0 0 0.0491"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+    <body>
+      <geom name="out_wall_127" type="box"
+            pos="6.0927 -0.2993 0.2500"
+            quat="-0.9997 0 0 0.0245"
+            size="0.1000 0.1227 0.2500"
+            material="mat_wall"/>
+    </body>
+
+    <geom name="start_line" type="box"
+          pos="0 5.0000 0.0150"
+          size="0.01 1.0000 0.005"
+          rgba="1 0 0 1"/>
+  </worldbody>
+</mujoco>
